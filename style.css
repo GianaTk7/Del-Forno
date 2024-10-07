@@ -27,20 +27,129 @@
     position: relative;
 }
 
-.swiper-slide {
-    animation-name: swiper-slide;
-    animation-duration: 4s;
+#moveslide1 {
+    animation-name: heading;
+    animation-duration: 1s;
 }
 
-/* @keyframes swiper-slide{{
-    0%{
-    transform: translate y: (-300%)}
+@keyframes heading {
+    0% {
+        transform: translateX(300%);
+    }
 
-    100%{
-     transform: translate y:(0%) ;}
+    100% {
+        transform: translateX(0%);
+    }
 
 }
-} */
+
+#left {
+    animation-name: left;
+    animation-duration: 1.5s;
+}
+
+@keyframes para {
+    0% {
+        transform: translateX(300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+#moveslide2 {
+    animation-name: slider;
+    animation-duration: 1s;
+}
+
+@keyframes slider {
+    0% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+#right {
+    animation-name: moveside;
+    animation-duration: 1.5s;
+}
+
+@keyframes para {
+    0% {
+        transform: translateX(300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+#moveslide3 {
+    animation-name: starter;
+    animation-duration: 1s;
+}
+
+@keyframes starter {
+    0% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+@keyframes para {
+    0% {
+        transform: translateX(-300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+#moveslide4 {
+    animation-name: move;
+    animation-duration: 1s;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
+.para {
+    animation-name: move;
+    animation-duration: 1.5s;
+}
+
+@keyframes para {
+    0% {
+        transform: translateX(300%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+
+}
+
 .swiper-slide img {
     display: block;
     width: 100%;
@@ -203,7 +312,6 @@ li .promo {
 }
 
 .slideContent {
-    border: 1px solid red;
     width: 80%;
     z-index: 10000;
     position: absolute;
@@ -219,9 +327,7 @@ li .promo {
     font-family: 'Roboto Slab', sans-serif !important;
     text-transform: uppercase;
     column-gap: 30px;
-    column-rule-style: solid;
-    column-rule-width: 3px;
-    column-rule-color: #ffffff;
+
 }
 
 .info {
@@ -289,7 +395,6 @@ li .promo {
 }
 
 .videoplay {
-    border: 1px solid blue;
     width: 50%;
     height: 50vh;
 }
@@ -302,7 +407,6 @@ li .promo {
 }
 
 .wraper2 {
-    border: 1px solid black;
     width: 100%;
     height: 51vh;
     display: flex;
@@ -352,20 +456,20 @@ li .promo {
 }
 
 .wrapper3 {
-    border: 1px solid green;
+    /* border: 1px solid green; */
     width: 100%;
     height: 83vh;
     display: flex;
 }
 
 .imagebox {
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
     width: 45%;
     height: 85vh;
 }
 
 .textwraper {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 55%;
     height: 85vh;
 }
@@ -407,7 +511,7 @@ li .promo {
 }
 
 hr {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 7%;
     margin: 0 0 0 85px;
 }
@@ -425,7 +529,7 @@ hr {
 }
 
 .button {
-    border: 2px solid #f32314;
+    /* border: 2px solid #f32314; */
     width: 23%;
     display: flex;
     align-items: center;
@@ -461,7 +565,7 @@ hr {
 }
 
 .wrapper4 {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: 85vh;
     display: flex;
@@ -521,7 +625,7 @@ hr {
 }
 
 .button2 {
-    border: 2px solid red;
+
     width: 23%;
     display: flex;
     align-items: center;
@@ -553,45 +657,44 @@ hr {
 }
 
 .dishcontainer {
-    border: 1px solid red;
+    border: 1px solid blue;
     width: 100%;
     height: 100vh;
-    overflow: hidden;
-    z-index: 100000;
-    top: 100px;
+    position: relative;
 }
 
-.items {
-    border: 1px solid red;
+.dishcontainer img {
     width: 100%;
-    height: 50px;
+    height: 100%;
+    object-fit: cover;
 }
 
-.parent h1 {
-
-    border: 1px solid blue;
+.dishcontainer h1, h2 {
+    top: 0;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 67px;
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    font-family: 'Oswald', sans-serif !important;
+    font-weight: 600;
+    padding-top: 115px;
 }
-
-.parent h2 {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-}
-
-.footer {
-    border: 1px solid green;
+.dishcontainer h2{
+     padding-top: 180px;
+    color: #f32314;
+    font-size: 20px;
+     word-spacing: 10px;
+    font-weight: 400;
+} 
+.dish_menu{
+    /* border: 1px solid red; */
     width: 100%;
-    height: 20vh;
+    height: 65vh;
+    position:absolute ;
+    top: 220px;
+    
 }
