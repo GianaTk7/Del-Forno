@@ -369,13 +369,13 @@ li .promo {
 }
 
 .content1 {
-
     width: 50%;
     height: 50vh;
+   
 }
 
 .set1 {
-    padding: 90px 0 0 97px;
+    padding: 90px 0 0 200px;
     font-size: 48px;
     font-family: 'Oswald', sans-serif !important;
     font-weight: 600;
@@ -388,7 +388,7 @@ li .promo {
 
 .text1 {
     color: #646464 !important;
-    padding: 20px 0 0 97px;
+    padding: 20px 0 0 200px;
     font-size: 14px;
     font-weight: 700;
     font-family: 'Oswald', sans-serif !important;
@@ -397,12 +397,13 @@ li .promo {
 .videoplay {
     width: 50%;
     height: 50vh;
+
 }
 
 .videoplay video {
     width: 87%;
     height: 97%;
-    padding: 60px 0px 0 120px;
+    padding: 60px 120px 0 25px;
     object-fit: cover;
 }
 
@@ -456,20 +457,18 @@ li .promo {
 }
 
 .wrapper3 {
-    /* border: 1px solid green; */
     width: 100%;
     height: 83vh;
     display: flex;
 }
 
 .imagebox {
-    /* border: 1px solid orange; */
+
     width: 45%;
     height: 85vh;
 }
 
 .textwraper {
-    /* border: 1px solid blue; */
     width: 55%;
     height: 85vh;
 }
@@ -511,7 +510,6 @@ li .promo {
 }
 
 hr {
-    /* border: 1px solid red; */
     width: 7%;
     margin: 0 0 0 85px;
 }
@@ -529,7 +527,6 @@ hr {
 }
 
 .button {
-    /* border: 2px solid #f32314; */
     width: 23%;
     display: flex;
     align-items: center;
@@ -565,7 +562,6 @@ hr {
 }
 
 .wrapper4 {
-    /* border: 1px solid red; */
     width: 100%;
     height: 85vh;
     display: flex;
@@ -657,7 +653,6 @@ hr {
 }
 
 .dishcontainer {
-    border: 1px solid blue;
     width: 100%;
     height: 100vh;
     position: relative;
